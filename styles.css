@@ -562,6 +562,7 @@ footer {
   .ml-5{margin-left: 4rem;}
 }
 
+
 /* Small screens */
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -571,26 +572,41 @@ footer {
   }
 
   .logo {display: none;}
+  .main-image{ height: 100vh; ;}
+  .page-heading{ font-size: 30px;}
 
   .navbar-nav {flex-direction: row;}
   .nav-link {justify-content: center;}
 
   .remove{display: none;}
 
-  .video-background{ height: 100%;}
   .overlay-text{ font-size:16px;}
   .book-button{ padding: 10px; font-size: 10px;}
   .book-button-text{ font-size: 10px;}
   
-  .map{ margin-left: 0; }
+  .map{ margin: 10px; }
   .whole-div{ margin-left: 0; }
 
 	.contacts-img{ width: 100%; }
 	.info { width: 14rem; }
   
-  .row{ display: grid; }
-  .col-3{width: 100%;}
+  .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .col-3{width: 100%; }
 	.col-3 p{ font-size: 20px; width: 100%; text-align: left; }
+
+  .manicure-img , .design-img {
+    width: calc(100% - 20px);
+    margin: 10px; 
+    box-sizing: border-box;
+  }
+
+  .middle-service .col-3:first-child { order: 2; }
+  .middle-service .col-3:last-child { order: 1; }
   .contact-info{justify-content: center;}
 
   footer{ margin-bottom: 5rem; }
@@ -598,15 +614,18 @@ footer {
   .cards{flex-direction: column;}
   .b-card { 
     margin: 0.5rem 0; 
-    max-width: 400px; 
-    width: 100%; 
+    max-width: 500px; 
+    width: 100% !important; 
   }
+  .number{ font-size: 24px;}
+  .phone-icon{ font-size: 40px;}
   .ml-5{ margin-left: 0;}
   .all-card{ max-width: 300px;}
   
   .service-heading { flex-direction: column; align-items: flex-start; }
   .price { margin-left: 0; margin-top: 5px; }
   .service-text { text-align: left;}
+
 }
 
 @media only screen and (max-width:1896px){
