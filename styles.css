@@ -304,6 +304,140 @@ h6 {
 
 /* End of about us */
 
+/* Gallery */
+
+.container3{
+	display: flex;
+	max-width: max-content;
+}
+
+.box{
+	display: flex;
+	flex: 1;
+	transition: 0.5s;
+}
+
+.box img{
+	transition: 0.5s;
+	width: 100%;
+	height: 512px;
+	object-fit: cover;
+	filter: grayscale(0);
+}
+
+.box:hover{
+	flex: 3;
+}
+
+.box:hover img{
+	filter: grayscale(0);
+}
+
+/* End of gallery */
+
+/* Slider */
+
+
+.background {
+  width: 100%; 
+  height: 100%; 
+  position: relative; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 10px;
+}
+
+.slider-title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: 600; 
+}
+
+.slider-container {
+  position: relative;
+  width: 60%; 
+  max-width: 800px; 
+  overflow: hidden; 
+  border-radius: 10px; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);  
+}
+
+.slider {
+  display: flex; 
+  transition: transform 0.4s ease-in-out; 
+}
+
+.slide {
+  min-width: 100%; 
+  height: 450px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10; 
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.prev {
+  left: 10px; 
+}
+
+.next {
+  right: 10px; 
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots-container {
+  margin-top: 20px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.dot {
+  height: 15px; 
+  width: 15px; 
+  margin: 0 5px; 
+  background-color: rgba(255, 255, 255, 0.5); 
+  border-radius: 50%; 
+  display: inline-block; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.dot.active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* End of slider */
+
 /* Destination map and contacts */
 .map{
   display: flex;
@@ -450,32 +584,9 @@ footer {
   justify-content: start;
 }
 
-.container3{
-	display: flex;
-	max-width: max-content;
-}
+/* End of footer */
 
-.box{
-	display: flex;
-	flex: 1;
-	transition: 0.5s;
-}
-
-.box img{
-	transition: 0.5s;
-	width: 100%;
-	height: 512px;
-	object-fit: cover;
-	filter: grayscale(0);
-}
-
-.box:hover{
-	flex: 3;
-}
-
-.box:hover img{
-	filter: grayscale(0);
-}
+/* Service */
 
 .cards{
   display: flex;
@@ -532,8 +643,14 @@ footer {
   color:#141418;
 }
 
+.mb-1{margin-bottom: 5px;}
+.mb-2{margin-bottom: 10px;}
+.m-0{margin: 0;}
+
 .price { margin-left: 10px; }
 .dotted-line { margin: 20px 0; }
+
+/* End of service */
 
 /* Large screens */
 @media only screen and (min-width: 600px) {
