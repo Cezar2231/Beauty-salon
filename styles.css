@@ -309,6 +309,7 @@ h6 {
 .container3{
 	display: flex;
 	max-width: max-content;
+  margin: 10px;
 }
 
 .box{
@@ -630,7 +631,6 @@ footer {
   font-size: 20px;
 }
 
-.service-heading{ margin: 0; }
 .service-text{
   margin: 0 0 16px 0;
   color: #b6b6b6; 
@@ -641,6 +641,7 @@ footer {
   justify-content: space-between; 
   font-size: 20px;
   color:#141418;
+  margin: 0; 
 }
 
 .mb-1{margin-bottom: 5px;}
@@ -735,11 +736,12 @@ footer {
     width: 100% !important; 
   }
   .number{ font-size: 24px;}
+  .number-title{ font-size: 24px;}
   .phone-icon{ font-size: 40px;}
   .ml-5{ margin-left: 0;}
   .all-card{ max-width: 300px;}
   
-  .service-heading { flex-direction: column; align-items: flex-start; }
+  .service-heading { align-items: flex-start; }
   .price { margin-left: 0; margin-top: 5px; }
   .service-text { text-align: left;}
 
@@ -756,4 +758,12 @@ footer {
   .phone-icon { padding: 10px;}
   .heading{ font-size: 20px;}
   .b-card{ width: 180px;}
+  .row-responsive{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle-service .col-3:first-child { order: 2; }
+  .middle-service .col-3:last-child { order: 1; }
 }
